@@ -1,0 +1,483 @@
+﻿html {
+    font-size: 14px;
+    position: relative;
+}
+
+
+
+
+footer {
+    height: 155px; /* Height of the footer */
+    width: 100%;
+    position: relative;
+    top: auto;
+    clear: both;
+    bottom: 0;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+
+
+.header {
+    background-color: #808080;
+}
+
+
+
+.pb-3,
+.py-3 {
+    padding-bottom: 1rem;
+    margin-bottom: 5vh;
+}
+
+input[readonly] {
+    background-color: white;
+}
+
+
+#staticDiv {
+    position: fixed;
+    top: 110px; /* Position the div at the top of the viewport */
+    right: 15px; /* Position the div at the left side of the viewport */
+    width: 370px; /* Set the width of the div */
+    background-color: #f0f0f0; /* Optional: Add background color for visualization */
+    padding: 80px; /* Optional: Add padding for content */
+    height: 82vh;
+    border: 2px solid var(--theme-color);
+    z-index: 9999;
+}
+
+#content {
+    margin-left: 220px; /* Ensure content doesn't overlap with the static div */
+}
+
+#nxtbtn {
+    position: fixed;
+    top: 110px;
+    right: 90px;
+    width: 220px;
+    justify-content: center;
+    z-index: 9999;
+}
+
+
+@media (max-width: 768px) {
+    .navbar-nav.ml-auto {
+        margin-left: auto
+    }
+
+    #nxtbtn {
+        position: fixed;
+        top: 72px;
+        right: 328px;
+        width: 100px;
+        justify-content: center;
+        z-index: 9999;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #nxtbtn {
+        display: flex;
+        margin-top: -30px;
+        float: right;
+        width: 80px;
+        text-align: center;
+        height: 30px;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+    .Maincontent {
+        flex: 1;
+    }
+
+    /*.footer {
+            flex-shrink: 0;*/ /* Prevent the footer from shrinking */
+    /*position:relative;
+          
+            bottom: 0;
+            bottom: 0;
+            left: 0;            
+            right: 0;
+            z-index: 9999;
+        }*/
+
+    .header {
+        background-color: #808080;
+    }
+}
+
+/* Styles for screens between 601px and 900px */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+
+
+    .Maincontent {
+        flex: 1;
+    }
+
+
+
+    .header {
+        background-color: #808080;
+    }
+}
+
+/* Styles for screens larger than 901px */
+@media only screen and (min-width: 901px) {
+
+    .Maincontent {
+        flex: 1;
+    }
+
+
+    .header {
+        background-color: #808080;
+    }
+}
+
+
+
+
+.spacer {
+    flex: 0;
+    margin-top: 50px;
+    position: relative;
+}
+
+@media only screen and (max-width: 600px) {
+    .spacer {
+        flex: 0;
+        margin-top: 50px;
+        position: relative;
+    }
+}
+
+/* Styles for screens between 601px and 900px */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+    .spacer {
+        flex: 0;
+        margin-top: 50px;
+        position: relative;
+    }
+}
+
+/* Styles for screens larger than 901px */
+@media only screen and (min-width: 901px) {
+    .spacer {
+        flex: 0;
+        margin-top: 50px;
+        position: relative;
+    }
+}
+
+#hideValuesOnSelect {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.borderless-button {
+    background: none;
+    border: none;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: .18px;
+    font-family: GrowwSans,NotoSans,system-ui;
+}
+
+
+    .borderless-button:hover {
+        text-decoration: underline;
+        color: #b8e2d6;
+    }
+
+
+
+.popup {
+    display: none; /* Initially hide the popup */
+    position: absolute;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.DataCircle {
+    border-radius: 50%;
+    width: 100px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+}
+
+.absolute-center {
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+}
+
+.expertsRating_linearBar {
+    height: 8px;
+    border-radius: 2px;
+}
+
+.width100 {
+    display: block;
+    width: 100%;
+    padding-left: 50px;
+}
+
+.WebDesign {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.VisitAnalysis {
+    max-width: 1150px;
+    width: 100%;
+    margin: 0 0;
+}
+
+.Data_Wrapper {
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+}
+
+
+.valign-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.contentSecondary {
+    color: #7c7e8c
+}
+
+.bodyLarge, .bodyLargeHeavy {
+    font-size: 1.53rem;
+    line-height: 1.375rem;
+}
+
+.bodyLarge {
+    font-weight: 435;
+}
+
+.left-align {
+    text-align: left;
+}
+
+.row .col {
+    float: left;
+    box-sizing: border-box;
+    min-height: 1px;
+}
+
+@media only screen and (min-width: 800px) {
+    .row .col l12 {
+        width: 100%;
+    }
+}
+
+.stkF56Wrapper {
+    min-height: 400px;
+    border-radius: 8px;
+    border: 1px solid #e9e9eb;
+}
+
+.stkP12Section {
+    margin-top: 80px;
+}
+
+.stkF56Top {
+    position: relative;
+}
+
+
+
+.tabs8Container {
+    position: relative;
+    max-height: 55px;
+}
+
+.tabs8Line {
+    position: absolute;
+    bottom: 0;
+    height: 3px;
+    background: var(--theme-color);
+    will-change: left, width;
+    transition: left .2s linear, width .2s linear;
+}
+
+.stkF56TabText {
+    padding: 20px 25px 0 20px;
+    font-size: 15px;
+    letter-spacing: .2px;
+    color: #7c7e8c;
+    border-bottom: 1px solid #e9e9eb;
+}
+
+.backgroundPrimary {
+    background-color: #fff;
+}
+
+.stkF56SubDiv {
+    margin-top: 24px;
+}
+
+.VisitOrderData {
+    margin-left: 125px;
+    margin-right: 150px;
+}
+
+.stkF56TabDiv {
+    line-height: 15px;
+    padding-right: 45px;
+    height: 30px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.tabs8TextActive {
+    color: var(--theme-color);
+}
+
+.stkF56InfoDiv {
+    font-size: 14px;
+    color: #7c7e8c;
+    margin: 6px 0;
+    padding-right: 20px;
+    text-align: right;
+}
+
+@media only screen and (min-width: 800px) {
+    .row .col.l12 {
+        width: 100%;
+    }
+}
+
+#shpStockMainDiv {
+    min-height: 355px;
+}
+
+.headingLarge {
+    font-size: 3.25rem;
+    line-height: 1.25rem;
+}
+
+.headingBase, .headingLarge {
+    font-weight: 535;
+}
+
+#shpStockMainDiv .shp76Wr {
+    background: #fff;
+    margin-top: 24px;
+    padding: 10px 15px 20px;
+    border-radius: 8px;
+    border: 1px solid #e9e9eb;
+}
+
+.shp76TabText {
+    padding: 18px 0;
+    font-size: 15px;
+    letter-spacing: .2px;
+}
+
+.shp76ToggleActive {
+    background-color: #ebf9f5;
+    color: var(--theme-color);
+    border-radius: 20px;
+}
+
+.shp76ToggleActive, .shp76ToggleInactive {
+    height: 30px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    justify-content: center;
+}
+
+.shp76ToggleInactive {
+    color: #7c7e8c;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 800px) {
+    .row .col.l12 {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .row .col.l11, .row .col.l12 {
+        margin-left: auto;
+        left: auto;
+        right: auto;
+    }
+}
+
+.row .col {
+    float: left;
+    box-sizing: border-box;
+    min-height: 1px;
+}
+
+.shp76Row {
+    height: 75px;
+    margin-top: 5px;
+    padding-left: 10px;
+}
+
+.row {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.vspace-between {
+    justify-content: space-between;
+}
+
+.shp76TextRight {
+    letter-spacing: .27px;
+    color: #44475b;
+    font-size: 16px;
+    margin-right: 16px;
+    font-weight: 500;
+}
+
+.backgroundTertiary {
+    background-color: #f0f0f2;
+}
+
+.web-align {
+    max-width: 1110px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.fm77Disclaimer {
+    padding-top: 40px;
+    text-align: justify;
+}
+
+.fm77Container {
+    margin-bottom: 20px;
+}

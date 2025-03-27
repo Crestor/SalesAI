@@ -1,0 +1,154 @@
+﻿
+#right {
+    
+    width: 800px; /* set the  width to 800px */
+    margin: 0 auto; /* Center align if the width is less than 100% */
+}
+
+@media screen and (max-width: 900px) {
+    #right {
+        width: 100%; /* For smaller screens, take full width */
+    }
+}
+
+
+
+
+.wrapper {
+   
+    margin: 15px auto;
+}
+
+/* Calendar container */
+.container-calendar {
+    background: #ffffff;
+    padding: 10px;
+    max-width: 900px;
+    width:100%;
+    display:flex;
+    justify-content:center; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+
+/* Buttons in the calendar */
+.button-container-calendar button {
+    cursor: pointer;
+    background: var(--theme-color);
+    color: #fff;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+/* Calendar table */
+.table-calendar {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+    .table-calendar td,
+    .table-calendar th {
+        padding: 5px;
+        border: 1px solid #b1a8a894;
+        text-align: center;
+        vertical-align: top;
+        font-size: 15px;
+    }
+
+/* Date picker */
+.date-picker.selected {
+    background-color: #3497693d;
+    outline: 1px solid #b1a8a894;
+    color: black !important;
+    font-size: 15px;
+}
+
+/* Date picker when user is present */
+.date-picker.present {
+    font-size:15px;
+    outline: 1px solid #b1a8a894;
+    color: var(--theme-color);
+}
+/* Date picker when user is absent */
+.date-picker.absent {
+    font-size: 15px;
+    background-color: #ed070091;
+    outline: 1px solid #b1a8a894;
+    color: white !important;
+}
+/* Date picker when user is Leave */
+.date-picker.Leave {
+    font-size:15px;
+ 
+    outline: 1px solid #b1a8a894;
+    color: #e9900e;
+}
+
+    .date-picker.selected span {
+      /*  border-bottom: 2px solid currentColor;*/
+    }
+
+/* Day-specific styling */
+/*.date-picker:nth-child(1) {
+    color: var(--secondary-color);
+    background-color:red;*/
+    /* Sunday */
+/*}*/
+.date-picker:nth-of-type(1) {
+    background-color: #00edff30;
+    color: black;
+    font-size: 15px;
+ 
+}
+.date-picker:nth-child(6) {
+    /*color: var(--theme-color);*/
+    /* Friday */
+}
+
+/* Hover effect for date cells */
+.date-picker:hover {
+    background-color: var(--theme-color);
+    color: white;
+    cursor: pointer;
+}
+
+/* Header for month and year */
+#monthAndYear {
+    text-align: center;
+    margin-top: 0;
+}
+
+/* Navigation buttons */
+.button-container-calendar {
+    position: relative;
+    margin-bottom: 1em;
+    overflow: hidden;
+    clear: both;
+    border-radius: 5px;
+}
+
+#previous {
+    float: left;
+}
+
+#next {
+    float: right;
+}
+
+/* Footer styling */
+.footer-container-calendar {
+    margin-top: 1em;
+    border-top: 1px solid #dadada;
+    padding: 10px 0;
+}
+
+    .footer-container-calendar select {
+        cursor: pointer;
+        background: #ffffff;
+        color: #585858;
+        border: 1px solid #bfc5c5;
+        border-radius: 3px;
+        padding: 5px 1em;
+    }
