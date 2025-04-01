@@ -253,7 +253,7 @@ function datetime() {
 
     dt1 = new Date();
     dt2 = new Date(abc);
-    //here this if else statement is for checking the time user input is correct or not means timee is exist or not
+  
     if (dt2 < dt1) {
         alert("Wrong input enter time properly")
 
@@ -290,3 +290,54 @@ function diff_minutes(dt2, dt1) {
     return Math.abs(Math.round(diff));
 
 }
+
+
+
+function GetDetails() {
+    datetime();
+    var date = document.getElementById("ReAppointmentDate").value;
+    getTodayReappointments(date);
+}
+
+
+function getTodayReappointments(d) {
+
+    $.noConflict();
+
+    $.ajax({
+        type: "GET",
+        url: "/Flow/GetTodayAppointments",
+        contentType: "application/json",
+        data: { Date: d },
+        success: function (receipts) {
+            console.log("Success: ");
+
+            let tableBody = document.getElementById("tbody");
+            tableBody.innerHTML = "";
+            $(receipts).each(function (index, item) {
+                var seq = index + 1;
+
+
+                const tr = document.createElement("tr");
+                tr.innerHTML = `<td>${seq}</td>
+                              <td>${new Date(item.reAppointmentDate).toLocaleDateString()}</td>
+                                          <td>${item.appointmentTime.hour}:${item.appointmentTime.minute.toString().padStart(2, '0')}</td>
+                                       <td>${item.customerName} </td>                                     
+                                       <td>${item.area}</td>`;
+
+                tableBody.appendChild(tr);
+            });
+            document.getElementById("DisplayRoutes").style.display = 'block';
+
+        },
+        error: function (xhr, status, error) {
+            console.error("Error: " + error);
+            console.log("Status: " + status);
+            console.log("XHR: ", xhr);
+            alert("An error occurred while fetching products. " + xhr.responseText);
+        }
+    });
+
+}
+
+
