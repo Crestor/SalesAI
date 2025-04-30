@@ -7,7 +7,17 @@
 @media screen and (max-width: 900px) {
     #ShowVisit {
         width:95%;
-        padding-top: 10px;
+        padding-top: 0px;
+        margin-top:10px;
+        padding-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    #ShowVisit {
+        width: 95%;
+        padding-top: 0px;
+        margin-top: 10px;
         padding-bottom: 40px;
     }
 }
@@ -55,12 +65,10 @@ card {
 
 
 .table-view {
+    overflow-x:auto;
   
 }
 
-.table-view h4 {
-
-}
 
 .table-border {
     border: 2px solid #e9e9eb;
@@ -247,8 +255,8 @@ thead th {
 
 th,
 td {
-    /*border: 1px solid #ccc;*/
-    padding: 10px !important;
+
+    padding: 5px !important;
     text-align: center;
 }
 
@@ -339,13 +347,6 @@ thead th:first-child {
     border-radius: 24px !important;
     font-size: 10px;
 }
-
-.Route1 {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 .Route {
     width: 100%;
     min-height: 400px;
@@ -371,7 +372,7 @@ thead th:first-child {
 
 .RouteListContainer {
     width: 100%;
-    height: 10%;
+    height: 30%;
     list-style: none;
     padding: 0px;
     margin: 0 auto;
@@ -471,14 +472,6 @@ thead th:first-child {
         margin: 10px auto;
     }
 
-    .table-view h4{
-    
-    }
-    /*.table-border {
-        width: 1100px;
-        margin: 10px auto;
-        overflow-x: auto;
-    }*/
 
     .table-border table {
         justify-content: center;
@@ -510,15 +503,6 @@ thead th:first-child {
         width: 1000px;
         margin: 20px 50px;
     }
-
-    .table-view h4{
-      
-    }
-    /*.table-border {
-        width: 100%; 
-        margin: 20px 50px;
-        overflow-x: auto;
-    }*/
 
     .table-border table {
         justify-content: center;
@@ -559,14 +543,6 @@ thead th:first-child {
         margin: 20px 50px;
     }
 
-    .table-view h4{
-      
-    }
-    /*.table-border {
-        width: 90%;
-        margin: 20px 10px;
-        overflow-x: auto; 
-    }*/
 
     .table-border table {
         justify-content: center;
@@ -609,15 +585,7 @@ thead th:first-child {
         margin: 20px 70px;
     }
 
-    .table-view h4{
- 
-    }
-    /*.table-border {
-        width: 90%;
-        margin: 20px 10px;
-        overflow-x:auto;
-    }
-*/
+
     .table-border table {
         justify-content: center;
         align-content: center;
@@ -667,11 +635,7 @@ thead th:first-child {
         width: 250px;
     }
 
- /*   .table-border {
-        width: 90%; 
-        margin: 20px 10px;
-        overflow-x: auto;
-    }*/
+
     .smallbtn {
         font-size: 16px;
         width: 70px;
@@ -682,7 +646,7 @@ thead th:first-child {
 }
 
 
-@media (min-width:104px) and (max-width: 414 px) { 
+@media (min-width:104px) and (max-width: 414px) { 
 
     .main-heading {
         font-size: 2em;
@@ -698,9 +662,6 @@ thead th:first-child {
         margin: 20px 70px;
     }
 
-    .table-view h4 {
-      
-    }
 
 
 
